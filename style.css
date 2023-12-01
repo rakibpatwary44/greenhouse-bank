@@ -1,0 +1,39 @@
+body{
+    padding: 100px;
+}
+/* .bank-titl{
+    text-align: center;
+} */
+.submit-area{
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+#Transactioon-area{
+    display: none;
+}
+.status{
+    margin: 0 20px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.deposit{
+background-color: sandybrown;
+}
+.withdrew{
+background-color: lightsalmon;
+}
+.balance{
+background-color: orange;
+}
+
+
+
+
+
+  /* const currantBalance =document.getElementById("currantbalance").innerText;
+        const currantBalanceNumber = parseFloat(currantBalance);
+        const totalBalance = totalDopasit + currantBalanceNumber;
+        document.getElementById("currantbalance").innerText = totalBalance; */
