@@ -38,7 +38,12 @@ const dipositBtn = document.getElementById("addDeposit");
  const withdrawBtn = document.getElementById("addWithdrew");
  withdrawBtn.addEventListener("click",function(){
   const withdrewArea = getInputNumber("withdrewAmount");
-  console.log(withdrewArea);
+  
+
+    updateSpanText("motWhithdrew", withdrewArea);
+    updateSpanText("currantbalance", -1 * withdrewArea);
+
+    document.getElementById("withdrewAmount").value="";
  
  })
 
@@ -52,7 +57,7 @@ const dipositBtn = document.getElementById("addDeposit");
  }
  
 
- function updateSpanText(id, addDepositt) {
+ function updateSpanText(id, addDepositt,) {
    const currant = document.getElementById(id).innerText;
    const currantNumber = parseFloat(currant);
    const totalBalance = addDepositt + currantNumber;
